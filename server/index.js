@@ -23,10 +23,10 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  // .then(() =>
-  //   app.listen(process.env.PORT, () =>
-  //     console.log(`Listening at ${process.env.PORT}`)
-  //   )
-  // ).catch((error) => console.log(error));
+  .then(() =>
+    app.listen(process.env.PORT, () =>
+      console.log(`Listening at ${process.env.PORT}`)
+    )
+  ).catch((error) => console.log(error));
 
 app.use("/users", UserRoute);
