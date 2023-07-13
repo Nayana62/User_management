@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000" });
+const API = axios.create({ baseURL: "https://user-management-api-seven.vercel.app" });
 
 export const getAllUsers = () => API.get("/users");
 export const createNewUser = (formData) => API.post("/users", formData);
