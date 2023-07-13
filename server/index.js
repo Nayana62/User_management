@@ -17,3 +17,5 @@ mongoose
   })
 
 app.use("/users", UserRoute);
+
+export default app;
