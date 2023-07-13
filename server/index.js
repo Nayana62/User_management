@@ -8,7 +8,6 @@ const app = express();
 app.use(cors());
 dotenv.config();
 
-
 mongoose
   .connect("mongodb+srv://nmnayana62:HWLnWrGsCtQUBkCj@cluster0.6gcu7g8.mongodb.net/User_Management?retryWrites=true&w=majority", {
     useNewUrlParser: true,
