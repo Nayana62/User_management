@@ -19,14 +19,10 @@ app.use(cors(
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO_DB, {
+  .connect(mongodb+srv://nmnayana62:HWLnWrGsCtQUBkCj@cluster0.6gcu7g8.mongodb.net/User_Management?retryWrites=true&w=majority, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() =>
-    app.listen(process.env.PORT, () =>
-      console.log(`Listening at ${process.env.PORT}`)
-    )
-  ).catch((error) => console.log(error));
+  
 
 app.use("/users", UserRoute);
