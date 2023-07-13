@@ -5,13 +5,7 @@ import cors from "cors";
 import UserRoute from "./Routes/userRoute.js";
 
 const app = express();
-app.use(cors(
-  {
-    origin: [https://user-management-frontend-tau.vercel.app],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
+app.use(cors());
 dotenv.config();
 app.use(express.json());
 
