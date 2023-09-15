@@ -28,7 +28,7 @@ const AddUser = () => {
     <div className="w-full h-full bg-[#ccf6fe] flex flex-col ">
       <div className=" max-w-[800px] w-[90%] h-[80%] m-auto">
         <h1 className=" text-[60px] font-bold">Add User</h1>
-        <div className="w-[80%] h-[60%] bg-white shadow-xl rounded-3xl p-10">
+        <div className="w-[80%] h-[60%] bg-white shadow-xl rounded-3xl p-10 overflow-hidden">
           <form onSubmit={handleSubmit} className="flex flex-col gap-8">
             <input
               className="p-3 px-5 bg-gray-100 rounded-md outline-none"
