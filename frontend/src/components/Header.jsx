@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div className='h-[100px] w-full flex items-center justify-between px-20'>
-        <img className='w-[200px] h-[100px]' src="https://shunyeka.com/img/icons/logo.svg" alt="logo" />
+        <div></div>
         
         <div className='flex font-semibold gap-20 text-[#435962] text-[18px] mt-5'>
             <div className='flex flex-col justify-center items-center'>
